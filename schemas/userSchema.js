@@ -3,7 +3,7 @@ const Joi = require('joi');
 
 const id = Joi.string().uuid();
 const name = Joi.string().min(3).max(15);
-const lastname = Joi.String().min(10);
+const lastname = Joi.string().min(10);
 const email = Joi.string().email();
 const password = Joi.string().pattern(new RegExp('^[a-zA-Z0-9]{3,30}$'));
 const phone = Joi.number().integer().min(10);

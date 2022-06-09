@@ -12,7 +12,7 @@ class CategoriesService {
     for (let i = 0; i < limit; i++) {
         this.categories.push({
             id: faker.datatype.uuid(),
-            categories:faker.commerce.product(),
+            category:faker.commerce.product(),
             description: faker.commerce.productDescription(),
             // name: faker.name.firstName(),
             // lastname: faker.name.lastName(),
